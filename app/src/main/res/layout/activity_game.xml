@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".game">
+
+    <TextView
+        android:id="@+id/moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Moves: n/A"
+        android:textColor="#B1FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_weight="30"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/number3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/sub100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="11dp"
+                android:background="#F44336"
+                android:text="100"
+                android:textColor="#E1F5FE" />
+
+            <Button
+                android:id="@+id/sub10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="7dp"
+                android:background="#F44336"
+                android:text="10"
+                android:textColor="#E1F5FE" />
+
+            <Button
+                android:id="@+id/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="7dp"
+                android:background="#F44336"
+                android:text="1"
+                android:textColor="#E1F5FE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="178dp"
+                android:layout_height="103dp"
+                android:layout_marginTop="11dp"
+                android:ems="10"
+                android:hint="Guess?"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal|numberSigned"
+                android:textAlignment="center"
+                android:textColor="#E3F2FD"
+                android:textColorHint="@color/hint"
+                android:textSize="53sp" />
+
+            <Button
+                android:id="@+id/check"
+                android:layout_width="176dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="7dp"
+                android:background="#03A9F4"
+                android:text="Check  >>>"
+                android:textColor="#E1F5FE" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/add100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="3dp"
+                android:background="#4CAF50"
+                android:text="100"
+                android:textColor="#E1F5FE" />
+
+            <Button
+                android:id="@+id/add10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="3dp"
+                android:background="#4CAF50"
+                android:text="10"
+                android:textColor="#E1F5FE" />
+
+            <Button
+                android:id="@+id/add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="3dp"
+                android:background="#4CAF50"
+                android:text="1"
+                android:textColor="#E1F5FE" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="40" />
+
+    <Button
+        android:id="@+id/gu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#000000"
+        android:text="Give Up"
+        android:textColor="#80FFFFFF"
+        android:textSize="12sp" />
+</LinearLayout>
